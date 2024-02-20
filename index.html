@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Tip Calculator</title>
+</head>
+<body>
+    
+<div class="container">
+    <h1>Tip Calculator</h1>
+<div class="input-group">
+
+    <label for="billAmount">Bill Amount</label>
+    <input type="number" id="billAmount" placeholder="Enter bill amount">
+
+</div>
+
+<div class="input-group">
+
+    <label for="">Type of Tip</label>
+    <input type="radio" id="customerTip" name="tipOption" placeholder="Enter bill amount">
+  <label for="customerTip">Custom</label>
+  <input type="radio" id="serviceRating" name="tipOption">
+  <label for="serviceRating">serviceRating</label>
+</div>
+
+<div id="customerTipInput" class="input-group">
+
+<label for="customerTipAmount">Enter custom tip amount</label>
+<input type="number" id="customerTipAmount" placeholder="Enter custom tip amount">
+</div>
+
+<div id="splitCount" class="input-group">
+
+    <label for="splitCount">Number of people</label>
+    <input type="number" id="splitCount" placeholder="Enter number of people">
+    </div>
+
+<div id="serviceRatingInput" class="input-group" style="display: none;">
+<label for="serviceRatingSelect">Select service rating</label>
+<select name="" id="serviceRatingSelect">
+    <option value="1">Poor</option>
+    <option value="2">Avereage</option>
+    <option value="3">Good</option>
+    <option value="4">Excellent</option>
+</select>
+</div>
+
+<div class="input-group">
+    <label for="mealType">Meal Type:</label>
+    <select name="" id="mealType">
+
+        <option value="breakfast">Breakfast</option>
+        <option value="breakfast">Lunch</option>
+        <option value="breakfast">Dinner</option>
+    </select>
+</div>
+
+<div class="result">
+    <h2>Result</h2>
+    <div id="tipAmount"></div>
+    <div id="totalAmount"></div>
+    <div id="amountPerPerson"></div>
+</div>
+
+<button id="calculate">calculate</button>
+</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
